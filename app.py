@@ -21,7 +21,7 @@ question=st.text_area("Nhập câu hỏi của bạn ở bên dưới")
 button=st.button("Send")
 
 def answer(question):
-    openai.api_key="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" #API KEY
+    openai.api_key="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" #API KEY
     response = openai.Completion.create(
         model="text-davinci-003",
         prompt=f"""{question} {language}""",
