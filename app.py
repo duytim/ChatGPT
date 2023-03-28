@@ -1,5 +1,7 @@
 import openai
 import streamlit as st
+import os
+from dotenv import load_dotenv
 
 view = """
 Chào mừng bạn đến với Anonyviet Write Code! Bạn cảm thấy mệt mỏi khi phải vật lộn để tự viết code
