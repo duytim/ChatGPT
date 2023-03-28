@@ -25,7 +25,7 @@ button=st.button("Send")
 def answer(question):
     #openai.api_key="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" #API KEY
     load_dotenv()
-    API_KEY = os.getenv("OPENAI_API_KEY")
+    openai.api_key = os.getenv("OPENAI_API_KEY")
     response = openai.Completion.create(
         model="text-davinci-003",
         prompt=f"""{question} {language}""",
