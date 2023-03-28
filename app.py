@@ -1,7 +1,6 @@
 import openai
 import streamlit as st
-import os
-from dotenv import load_dotenv
+
 view = """
 Chào mừng bạn đến với Anonyviet Write Code! Bạn cảm thấy mệt mỏi khi phải vật lộn để tự viết code
 Đừng lo đã có Anonyviet ở đây ! Mình sẽ là người giúp bạn viết code với nhiều nhiều ngôn ngữ lập trình khác. 
@@ -20,10 +19,9 @@ with st.sidebar:
 language=st.selectbox("Lựa chọn 1 ngôn ngữ mà bạn muốn:", ("Python", "C++", "Java", "Pascal"))
 question=st.text_area("Nhập câu hỏi của bạn ở bên dưới")
 button=st.button("Send")
-load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+
 def answer(question):
-    #openai.api_key="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" #API KEY
+    openai.api_key="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" #API KEY
     response = openai.Completion.create(
         model="text-davinci-003",
         prompt=f"""{question} {language}""",
