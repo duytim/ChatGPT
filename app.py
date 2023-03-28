@@ -1,7 +1,5 @@
 import openai
 import streamlit as st
-import os
-from dotenv import load_dotenv
 
 view = """
 Chào mừng bạn đến với Anonyviet Write Code! Bạn cảm thấy mệt mỏi khi phải vật lộn để tự viết code
@@ -23,9 +21,7 @@ question=st.text_area("Nhập câu hỏi của bạn ở bên dưới")
 button=st.button("Send")
 
 def answer(question):
-    #openai.api_key="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" #API KEY
-    load_dotenv()
-    openai.api_key = os.getenv("OPENAI_API_KEY")
+    openai.api_key="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" #API KEY
     response = openai.Completion.create(
         model="text-davinci-003",
         prompt=f"""{question} {language}""",
