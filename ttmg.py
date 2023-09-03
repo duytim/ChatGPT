@@ -10,7 +10,7 @@ CWD = os.getcwd()
 
 # All found ngrok authtoken from github
 tokens = {
-    "lostcatbox": "2UsSGQgKeUjGKDgmbYtYdQTAW6c_2oW8fmfhrGpLwSm3D4xE5"u6nhwY7SxQm94"
+    "lostcatbox": "2UsSGQgKeUjGKDgmbYtYdQTAW6c_2oW8fmfhrGpLwSm3D4xE5"
 }
 
 
