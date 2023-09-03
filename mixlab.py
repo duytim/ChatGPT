@@ -10,8 +10,7 @@ CWD = os.getcwd()
 
 # some ngrok authtokens found around github
 tokens = {
-    "duytim": "2UsN3uQXY6uDFAbwuj5jk98gIjS_FMP6jmfDbAAf5hPsgPEY",
-    "duytim2": "2UsMoBwRXn3u6xG8EBCD2dbgYrd_7ahMLMKgzMcNJgUwhSPAz"
+    "duytim": "1wdDfIjnCURrMC0hR3g9VeC44Yf_46nzwHn4syyKLSfCupYVQ"
 }
 
 
